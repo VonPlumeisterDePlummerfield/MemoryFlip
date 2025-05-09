@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="@drawable/select_box"
+    android:layout_marginTop="5dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Player Name"
+        android:textStyle="bold"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/player_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        android:text="Points"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/player_moves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"
+        android:text="Moves"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/player_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:text="Time"
+        android:textSize="20sp" />
+</LinearLayout>

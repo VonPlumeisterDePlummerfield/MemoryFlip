@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scores_list"
+    android:background="@drawable/background_color"
+    tools:context=".ScoresActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/background_top_box" />
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/settings_button" />
+
+    <TextView
+        android:id="@+id/score_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hall of Fame"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="100dp" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back_button"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/scores_recycler_view"
+        android:layout_width="385dp"
+        android:layout_height="779dp"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_top_frame"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_player_score" />
+</androidx.constraintlayout.widget.ConstraintLayout>

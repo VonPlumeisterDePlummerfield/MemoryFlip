@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    >
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/card_branch" />
+</androidx.cardview.widget.CardView>

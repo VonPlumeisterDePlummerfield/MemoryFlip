@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".MainActivity">
+
+    <!--Points and settings buttons Part -->
+    <FrameLayout
+        android:id="@+id/frameLayout_top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/background_top_box"
+            >
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/settings_button" />
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Points"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/points_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </FrameLayout>
+    <!--END OF Points and settings buttons Part -->
+
+    <!-- Title image -->
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="320dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_top_frame"
+        app:srcCompat="@drawable/game_title" />
+    <!-- END OF Title image -->
+
+    <!-- Buttons -->
+    <FrameLayout
+        android:id="@+id/frameLayout_play_button"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginTop="100dp"
+        app:layout_constraintVertical_bias="0.266">
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/play_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Play"
+            android:textColor="@color/black"
+            android:textSize="60sp">
+
+        </TextView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_score_button"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        android:background="@null"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_play_button"
+        app:layout_constraintVertical_bias="0.062">
+
+        <ImageButton
+            android:id="@+id/score_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/score_button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Scores"
+            android:textColor="@color/black"
+            android:textSize="45sp">
+
+        </TextView>
+    </FrameLayout>
+    <!-- END OF Buttons -->
+
+    <!-- Overlay for settings (initially hidden) -->
+    <FrameLayout
+        android:id="@+id/settings_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:background="@drawable/menu_box"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/close_settings_button"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_background"
+            android:scaleType="fitCenter"
+            android:padding="0dp"
+            app:srcCompat="@drawable/close_button"
+            android:contentDescription="Close Settings" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center" />
+
+    <CheckBox
+        android:id="@+id/music_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
+
+    <CheckBox
+        android:id="@+id/sfx_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SFX"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>
+    </FrameLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

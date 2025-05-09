@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context=".LevelActivity">
+    <!--Points and settings buttons Part -->
+    <FrameLayout
+        android:id="@+id/frameLayout_top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/background_top_box"
+            >
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/settings_button" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back_button"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+    </FrameLayout>
+    <!--END OF Points and settings buttons Part -->
+
+    <!-- Game Level Buttons -->
+    <FrameLayout
+        android:id="@+id/frameLayout_level_5x5"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_level">
+
+        <ImageButton
+                android:id="@+id/level_5x5_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level 1"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_level_6x6"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_level_5x5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="192dp">
+
+        <ImageButton
+            android:id="@+id/level_6x6_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level 2"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_level_7x7"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_level_6x6"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="192dp">
+
+        <ImageButton
+            android:id="@+id/level_7x7_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level 3"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_level_8x8"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_level_7x7"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="192dp">
+
+        <ImageButton
+            android:id="@+id/level_8x8_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level 4"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_level_9x9"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_level_8x8"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="192dp">
+
+        <ImageButton
+            android:id="@+id/level_9x9_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level 5"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout_level_10x10"
+        android:layout_width="177dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_level_9x9"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="192dp">
+
+        <ImageButton
+            android:id="@+id/level_10x10_button"
+            android:layout_width="177dp"
+            android:layout_height="93dp"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/select_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Level 6"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/select_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Select Level"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout_top_frame" />
+
+    <FrameLayout
+        android:id="@+id/settings_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="230dp"
+            android:background="@drawable/menu_box"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/close_settings_button"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_background"
+                android:scaleType="fitCenter"
+                android:padding="0dp"
+                app:srcCompat="@drawable/close_button"
+                android:contentDescription="Close Settings" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+
+            <CheckBox
+                android:id="@+id/music_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+
+            <CheckBox
+                android:id="@+id/sfx_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SFX"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp" />
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <!-- Repeat similar FrameLayouts for 6x6, 7x7, 8x8, 9x9, and 10x10 levels with unique IDs -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
